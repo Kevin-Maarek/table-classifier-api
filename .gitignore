@@ -1,0 +1,65 @@
+# Python cache / compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.json
+
+# Google Cloud credentials / service account keys
+*service-account*.json
+*gcp*.json
+*credentials*.json
+
+# Logs
+*.log
+logs/
+
+# Test / coverage / type-check caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor local settings
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# models
+models/*.pt
+
+# Docker local files
+.docker/
+
+# Optional: model weights can be large/confidential.
+# For a PRIVATE repo and if the file is under GitHub's size limit, you may commit models/best.pt.
+# For a PUBLIC repo or if the file is large, uncomment these lines and use Git LFS or external storage.
+# models/*.pt
+# models/*.onnx
+# models/*.engine
+
+# Optional: sample images may contain sensitive data.
+# Keep only anonymized samples in GitHub.
+# samples/*
